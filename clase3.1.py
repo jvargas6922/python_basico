@@ -18,15 +18,17 @@ for i in range(n):
 
 print(lista_par)
 """
-
 valores = [0,4,5,6,7,8,9]
 pares = []
 impar = []
 print("Metodo de comprension")
 divisibles = ["pares" if valor % 2 == 0 else "impar" for valor in valores]
-print(divisibles)
-# print(f" pares {pares}")
-# print(f"impar {impar}")
+print("arreglo divisibles",divisibles)
+pares = [valor for valor in valores if valor % 2 == 0]
+impar = [valor for valor in valores if valor % 2 != 0]
+
+print(f" pares {pares}")
+print(f"impar {impar}")
 
 # print("Metodo tradicional")
 # for valor in valores:
