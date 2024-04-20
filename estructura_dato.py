@@ -71,3 +71,29 @@ print(pares)
 print(lista_string)
 lista_string.sort()
 print(lista_string)
+
+#Metodo sorted
+lista_numeros =[8,5,6,1]
+print(lista_numeros)
+lista_desendente = sorted(lista_numeros,reverse=True)
+                            # lista     reverse me cambia los valore del final a inicio
+print(lista_desendente)
+
+#Metodo index()
+print(lista_numeros.index(5))
+
+#concatenar lista 
+animales = ['Gato', 'Perro', 'Tortuga']
+animales_2 = ['Hurón', 'Hamster', 'Erizo de Tierra']
+
+mascotas = animales + animales_2
+print(mascotas)
+
+#Repitiendo listas
+
+mascotas_repetidas = mascotas * 4
+print(mascotas_repetidas)
+
+#Metodo count
+print(mascotas_repetidas.count('Gato'))
+
