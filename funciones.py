@@ -87,6 +87,7 @@ print("Tus respuestas fueron: ", respuestas)
 
 encuesta(['0', '1', '2', '3'])
 """
+"""
 # forma tardicional
 respuestas =[]
 print(preguntas[0])
@@ -115,5 +116,51 @@ for p in preguntas:
 print(respuestas)
 for r in respuestas:
     print(f"la respuesta fueron las siguiente {r}")
+"""
 
 
+# def resta(a,b):
+#     print(a - b)
+
+# val1 = int(input("valor 1"))
+# val2 = int(input("valor 2"))
+# resta(val1,val2)
+
+def operaciones(a , b = None):
+    if a and b:
+        suma = a + b
+        resta = a - b
+        mult = a * b
+        div = a / b
+        print(f"la suma es {suma}")
+        print(f"la resta es {resta}")
+        print(f"la multiplicacion es {mult}")
+        print(f"la division es {div}")
+    elif a:
+        potencia = a ** 2
+        print(f"la potencia es {potencia}")
+    else:
+        potencia = b ** 2
+        print(f"la potencia es {potencia}")
+
+
+#operaciones(5,5)
+#operaciones(5)
+#operaciones(5,0)
+
+# RETORNO DE UNA FUNCION
+def  multiplicar():
+    a = 5
+    b = 10
+    return a * b
+
+ valor = multiplicar()
+ print(valor)
+
+ def operaciones_matematicas():
+    suma = 5 + 5
+    resta = 10 - 5
+    mult = 5 * 5
+    return suma, resta, mult
+
+valores = operaciones_matematicas()
