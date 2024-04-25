@@ -46,3 +46,8 @@ for clave, valor in efemerides.items():
 # efemerides.get(fecha)
 # print(f"La fecha ingresada se celebra: {efemerides[fecha]}")
 # print(f"La fecha ingresada se celebra: {efemerides.get(fecha, 'No se celebra nada')}")
+
+# separar split por espacio
+saludo = "hola, mundo, como estas"
+print(saludo.split(", ")) # ['hola', 'mundo', 'como estas']
+print(saludo.split()) # ['hola', 'mundo', 'como', 'estas']
